@@ -46,7 +46,7 @@ adminSchema.methods.generateAuthToken = function () {
       role: this.role,
     },
     process.env.JWT_SECRET,
-    { expiresIn: "24h" }
+    { expiresIn: process.env.JWT_LIFETIME }
   );
 };
 
