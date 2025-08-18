@@ -17,7 +17,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "https://landingpageaayakar.netlify.app/",
+    origin: "https://landingpageaayakar.netlify.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
